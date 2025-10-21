@@ -1,3 +1,41 @@
+
+---
+
+## MyPlayCompany Fork
+
+This is a fork of [tosspayments-react-native-webview](https://github.com/tosspayments/tosspayments-react-native-webview) maintained by **myplaycompany** for PlabManager app.
+
+### Maintained by
+- MyPlayCompany Development Team
+- Repository: https://github.com/myplaycompany/tosspayments-react-native-webview
+
+### Fork Information
+- **Original**: [react-native-webview/react-native-webview](https://github.com/react-native-webview/react-native-webview)
+- **Forked from**: [tosspayments/tosspayments-react-native-webview](https://github.com/tosspayments/tosspayments-react-native-webview)
+- **Purpose**: Bug fixes and customizations for PlabManager app
+- **Version**: Based on tosspayments-react-native-webview v1.0.1
+
+### Changes from tosspayments version
+- Custom bug fixes for specific use cases
+- Optimizations for PlabManager app requirements
+- Maintained independently for project-specific needs
+
+### Installation
+
+```bash
+# Using yarn
+yarn add git+ssh://git@github.com/myplaycompany/tosspayments-react-native-webview.git#main
+
+# Using npm
+npm install git+ssh://git@github.com/myplaycompany/tosspayments-react-native-webview.git#main
+```
+
+### Version Tags
+We use semantic versioning with `-myplay` suffix:
+- `v1.0.2-myplay` - First myplaycompany fork release
+- Future updates will follow this pattern
+
+---
 This library is a fork of react-native-webview by tosspayments' react-native-sdk to fix the iOS webview navigation bug.
 
 forked from [react-native-webview/react-native-webview](https://github.com/react-native-webview/react-native-webview)
