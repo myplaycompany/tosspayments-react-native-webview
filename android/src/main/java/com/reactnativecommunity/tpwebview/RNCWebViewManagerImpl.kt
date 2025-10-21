@@ -331,13 +331,21 @@ class RNCWebViewManagerImpl {
         } catch (e: JSONException) {
           throw RuntimeException(e)
         }
-        "injectJavaScript" -> webView.evaluateJavascriptWithFallback(args.getString(0))
+        "injectJavaScript" -> {
+            val js = args?.getString(0)
+            if (js != null) {
+                webView.evaluateJavascriptWithFallback(js)  // null 체크 후 안전하게 호출
+            }
+        }
         "loadUrl" -> {
           if (args == null) {
             throw RuntimeException("Arguments for loading an url are null!")
           }
           webView.progressChangedFilter.setWaitingForCommandLoadUrl(false)
-          webView.loadUrl(args.getString(0) ?: "")
+          val url = args.getString(0)
+          if (url != null) {
+            webView.loadUrl(url)
+          }
         }
         "requestFocus" -> webView.requestFocus()
         "clearFormData" -> webView.clearFormData()
