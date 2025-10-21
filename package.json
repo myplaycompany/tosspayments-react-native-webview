@@ -8,7 +8,7 @@
   "author": "jh.yang <jh.yang@toss.im>",
   "license": "MIT",
   "version": "1.0.1",
-  "homepage": "https://github.com/tosspayments/tosspayments-react-native-webview#readme",
+  "homepage": "https://github.com/myplaycompany/tosspayments-react-native-webview#readme",
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
@@ -69,7 +69,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/react-native-webview/react-native-webview.git"
+    "url": "https://github.com/myplaycompany/tosspayments-react-native-webview.git"
   },
   "files": [
     "android/src",
